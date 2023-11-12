@@ -21,13 +21,13 @@ npm install openai ai prisma @prisma/client @pinecone-database/pinecone @clerk/n
 
 ### Dependencies
 
-**→ openai** helps to intract with ChatGPT with JS code.
-**→ ai** Provides utility/chat functions for Chat BOT.
-**→ prisma** allows to work with Database.
-**→ pinecone** for Vector Embeddings for long term memory of AI.
-**→ next-themes** for dark themes on site.
-**→ clerk** for authentication.
-**→ prettier** code formatter tool.
+**→ openai** helps to intract with ChatGPT with JS code.<br/>
+**→ ai** Provides utility/chat functions for Chat BOT.<br/>
+**→ prisma** allows to work with Database.<br/>
+**→ pinecone** for Vector Embeddings for long term memory of AI.<br/>
+**→ next-themes** for dark themes on site.<br/>
+**→ clerk** for authentication.<br/>
+**→ prettier** code formatter tool.<br/>
 
 ### shadcn-ui
 
