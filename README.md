@@ -2,6 +2,8 @@
 
 ## Setup
 
+Starting with creating nextJS app with some packages that we will use in the project.
+
 ```
 npx create-next-app@latest
 ```
@@ -19,7 +21,7 @@ npx create-next-app@latest
 npm install openai ai prisma @prisma/client @pinecone-database/pinecone @clerk/nextjs @clerk/themes next-themes prettier eslint-config-prettier prettier-plugin-tailwindcss
 ```
 
-### Dependencies
+### About Dependencies
 
 **→ openai** helps to intract with ChatGPT with JS code.<br/>
 **→ ai** Provides utility/chat functions for Chat BOT.<br/>
@@ -30,6 +32,8 @@ npm install openai ai prisma @prisma/client @pinecone-database/pinecone @clerk/n
 **→ prettier** code formatter tool.<br/>
 
 ### shadcn-ui
+
+Following is the shadcn UI setting in the project
 
 ```
 npx shadcn-ui@latest init
@@ -49,6 +53,8 @@ Write configuration to components.json. Proceed? ... ✅yes
 ```
 
 ### shadcn Components
+
+These are the components that we are going to use in this project
 
 ```
 npx shadcn-ui@latest add button
@@ -73,3 +79,23 @@ npx shadcn-ui@latest add input
 ```
 npx shadcn-ui@latest add textarea
 ```
+
+### Prisma
+
+In order to set up Prisma (after installing all the initial packages above)
+
+```
+npx prisma init
+```
+
+This creates `.env` & `prisma/schema.prisma` in which we use our `DATABASE_KEY` & `Schema Defination`
+
+After setting all the Structure of our Database,
+
+```
+npx prisma generate
+```
+
+This will set up the `Prisma client`
+
+**NOTE: Make sure that you are using 64 bit version of nodeJS**
