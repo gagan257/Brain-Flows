@@ -18,7 +18,7 @@ npx create-next-app@latest
 ```
 
 ```
-npm install openai ai prisma @prisma/client @pinecone-database/pinecone @clerk/nextjs @clerk/themes next-themes prettier eslint-config-prettier prettier-plugin-tailwindcss
+npm install openai ai prisma @prisma/client @pinecone-database/pinecone @clerk/nextjs @clerk/themes next-themes prettier eslint-config-prettier prettier-plugin-tailwindcss nextjs-toploader
 ```
 
 ### About Dependencies

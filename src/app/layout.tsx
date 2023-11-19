@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Imprima, Inter } from "next/font/google";
 import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
-
+import { Import } from "lucide-react";
+import NextTopLoader from "nextjs-toploader";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Brain Flows WebApp",
+  title: "Brain Flows - AI Notes App",
   description: "Notes with AI search",
 };
 
@@ -18,7 +19,10 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en">
-        <body className={inter.className}>{children}</body>
+        <body className={inter.className}>
+          <NextTopLoader color="black" showSpinner={false} />
+          {children}
+        </body>
       </html>
     </ClerkProvider>
   );
