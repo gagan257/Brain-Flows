@@ -4,6 +4,7 @@ import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
 import { Import } from "lucide-react";
 import NextTopLoader from "nextjs-toploader";
+import { ThemeProvider } from "./ThemeProvider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -21,7 +22,7 @@ export default function RootLayout({
       <html lang="en">
         <body className={inter.className}>
           <NextTopLoader color="black" showSpinner={false} />
-          {children}
+          <ThemeProvider attribute="class">{children}</ThemeProvider>
         </body>
       </html>
     </ClerkProvider>
